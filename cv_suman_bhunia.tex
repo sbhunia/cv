@@ -1,0 +1,304 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+%\documentclass[11pt,letterpaper,sans]{moderncv}   
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper','legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\documentclass[10pt,times]{article}
+
+% moderncv themes
+%\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+%\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\usepackage[scaled]{helvet}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[top=0.75in, bottom=0.75in, left=1in, right=0.75in]{geometry}
+\usepackage{enumerate}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Suman}
+\familyname{Bhunia}
+%\title{Resumé title}                          % optional, remove / comment the line if not wanted
+\address{1050 Nevada Street, Apt 121}{Reno, NV 89503}    % optional, remove / comment the line if not wanted
+\mobile{+1~(551)~587~0783}                     % optional, remove / comment the line if not wanted
+%\phone{+2~(345)~678~901}                      % optional, remove / comment the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove / comment the line if not wanted
+\email{sbhunia@nevada.unr.edu}                          % optional, remove / comment the line if not wanted
+%\homepage{www.cse.unr.edu}                  % optional, remove / comment the line if not wanted
+\extrainfo{www.sbhunia.me}            % optional, remove / comment the line if not wanted
+
+%\quote{Some quote}                            % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{bibj,bibp,bibc}{{Journals},{In\ Progress},{Conference\ Proceedings}}
+\usepackage{enumerate}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+
+% Making the title
+\makecvtitle
+\vspace{-3\baselineskip}
+
+% This is for creating header on each page except the front page
+\rhead{\ifthenelse{\value{page}=1}{}{\color{gray}Suman Bhunia~~ \em Curriculum Vitae}}
+
+
+\section{Education}
+\cventry{2013--present\\ GPA:4.0/4.0}{Ph.D. Candidate in Computer Science}{University of Nevada, Reno, USA}{\emph{Thesis:} Defense Against Intelligent Attacker in Cognitive Radio Networks}{} {Advisor: Dr. Shamik Sengupta}
+
+\cventry{2008--2010 \\ GPA:8.39/10}{Masters of Technology in Distributed and Mobile Computing}{Jadavpur University, Kolkata, India}{}{\emph{Thesis:} Performance Evaluation of WiMAX Network in Aspect of Modulation and Coding Schemes and Hand-off using OPNET}{Advisor: Dr. Iti Saha Misra}
+
+\cventry{2004--2008 \\ GPA:8.36/10}{Bachelor of Technology in Electronics and Communication Engineering}{West Bengal University of Technology}{Kolkata, India}{}{}
+
+
+\section{Professional Experience}
+\subsection{Research Experience}
+\cventry{2013--present}{Research Assistant}{Computer Networking Lab}{University of Nevada, Reno}{}{}
+
+\cventry{2012--2013}{Research Assistant}{Security in Wireless \& Ad hoc Networks (SWAN) Lab}{John Jay College of Criminal Justice}{City University of New York}{}
+
+\cventry{2009--2011}{Research Fellow}{Broadband Wireless Communication Lab}{Jadavpur University}{}{}
+
+
+\subsection{Teaching Experience}
+\cventry{2016-present}{Instructor}{Department of Computer Science and Engineering}{University of Nevada, Reno}{}{\emph{Courses Taught:} Computer Operating Systems (CS 446/646), Enrollment $\sim$ 70 students}
+
+\cventry{Summer 2016}{Instructor}{University of Nevada, Reno}{Project: Research Experience for Teachers}{}{Cyber Security Initiative for Nevada Teachers}
+
+\cventry{2014-2016}{Teaching Assistant}{Department of Computer Science \& Eng.}{University of Nevada, Reno}{}{\emph{Courses Taught:} Digital Design Laboratory (CPE 201)}
+
+\cventry{2011-2012}{Adjunct Lecturer}{Department of Computer Science}{City College of New York}{}{\emph{Courses Taught:} Introduction to Computing (CS 102) and Operating System Laboratory (CS 332)}
+
+\cventry{2011-2011}{Adjunct Lecturer}{Institute of Engineers, India}{Kolkata}{}{\emph{Courses Taught:} Computing and Informatics}
+
+\section{Research Interest}
+\cvitem{Security}{Network security, malicious node sensing/detection, cyber-physical security, wireless honeypot, jamming attack, spectrum fingerprinting}
+
+\cvitem{Wireless}{Cognitive radio, dynamic spectrum access (DSA), cross-layer optimization, ad hoc, unmanned autonomous systems (UAS), 3D wireless mesh, LTE-WiFi coexistence}
+
+\cvitem{Networking}{QoS and resource management, end-to-end performance, testbed implementation}
+
+
+
+% \section{Technical Skills}
+% \cvitem{\em Subjects}{Algorithms, stochastic models, machine learning, game theory, wireless security}
+% \cvitem{\em Programming}{C, Java, Python / Numpy , Android SDK}
+% \cvitem{\em Networking}{TCP/IP, WLAN deployment and diagnostics, wireshark}
+% \cvitem{\em Wireless}{IEEE802.11x, GSM, WiMAX, LTE}
+% \cvitem{\em Simulator}{OPNET, NS-2}
+% \cvitem{\em SDR}{GNURadio, USRP, frequency agile radio testbed}
+
+\section{Research Projects}
+\cventry{2013-present}{Jamming Avoidance in Dynamic Spectrum Access Networks}{PhD Dissertation}{}{}
+  {
+  \begin{itemize}
+    \item[--] Explored honeynet-based defense mechanism for cognitive radio networks under jamming attack.
+    \item[--] Designed stochastic learning mechanism to perceive attacker's strategy by wireless fingerprint.
+    \item[--] Formulated queue model with fixed vacation to analyze traffic behavior of cognitive radios.
+  \end{itemize}
+  The effectiveness of the proposed mechanism has been evaluated on a state-of-the-art high spectrum agile radio testbed comprising several USRP software defined radios which are controlled using open source GNURadio.
+  }
+
+\cventry{2015-present}{Neighbor Discovery in Directional Communication}{Lead Student}{}{}
+  {
+  \begin{itemize}
+    \item[--] Proposed line-of-sight (LOS) discovery methods for mobile nodes with full directional transceivers. Works both for directional RF and free-space-optics (FSO) networks.
+    \item[--] Modified helix equations to optimize neighbor discovery scanning in 3D.
+  \end{itemize}
+  This work has been evaluated with a prototype built with an off-the-shelf robot car, IR transceivers and Raspberry Pi as the controller. In addition, one patent application has been filed in collaboration with M Khan and Dr. M Yuksel.
+  }
+
+% \cventry{2016-present}{Joint Routing and Position control in 3D Mesh Networks}{Collaboration}{}{}
+%   {
+%   \begin{itemize}
+%     \item[--] Designed potential field based position control 3D mesh networks to optimize network performance.
+%   \end{itemize}
+%   A state of the art testbed is being developed at UNR using robot cars and UAVs.
+%   }
+
+
+\cventry{2015-2016}{Jamming Avoidance Multihop 3D UAS Mesh Networks}{Lead Student}{}{}
+  {
+  \begin{itemize}
+    \item[--] Examined the performance of adaptive beam nulling as a mitigation technique against jamming attacks in multihop ad hoc networks.
+    \item[--] Proposed Kalman filter based tracking model to predict movement of the jammer with discrete DoA estimation; and optimized the beam null region based on stochastic model.
+    \item[--] Built 3D mobility model for UAVs in ns3.
+  \end{itemize}
+  }
+
+
+\cventry{2010-2011}{Enhance Performance of Voice Service for Congested Networks}{Research Fellow}{}{}
+  {
+  \begin{itemize}
+    \item[--] Proposed optimization mechanism for SIP based VoIP service over wireless networks.
+    \item[--] Proposed effective adaptive jitter playout buffer algorithm for real-time application.
+    \item[--] Built MAC layer for cognitive radio in OPNET using Proto-C.
+    \item[--] Designed cross Layer optimization model of VoIP end-to-end QoS over cognitive radio.
+  \end{itemize}
+  }
+
+
+\cventry{2009-2010}{Real Time Traffic over WiMAX}{Masters Dissertation}{}{}
+  {
+  \begin{itemize}
+    \item[--] Evaluated performance of WiMAX under mobility, pathloss models, traffic type and scheduling.
+    \item[--] Investigated VoIP service in WiMAX, WiFi and integrated WiMAX-WiFi networks.
+    \item[--] Reduced hand-off delay for WiMAX network  by integrating  MAC and mobile-IP.
+  \end{itemize}
+  }
+
+
+\section{Testbed Development and Demonstration}
+\cventry{2015-present}{Dynamic Spectrum Access Testbed with GNURadio}{}{}{}
+  {
+  \begin{itemize}
+    \item[--] Implemented frequency agile cognitive radio testbed using USRP, GNU Radio.
+    \item[--] Inspected performance for channel aggregation, fragmentation, jamming attacks etc.
+    \item[--] Implemented full duplex transmission using single radio device.
+    \item[--] Implemented dynamic spectrum selection in multi hop mesh networks.
+  \end{itemize}
+  }
+
+\cventry{2013-2014}{Mobile Frequency agile Testbed}{}{}{}
+  {
+  \begin{itemize}
+    \item[--] Built on top of Atheros chips and ath5k as the WiFi driver.
+    \item[--] Investigated pseudo random channel hopping to mitigate jamming.
+  \end{itemize}
+  }
+
+
+
+
+\section{Student Advisement}
+\subsection{Graduate Students}
+\cventry{2014-2017}{Paulo Regis}{PhD student}{\url{pregis@nevada.unr.edu}}{}{Topic: Joint Routing and Position Control in 3D UAV Mesh Networks}
+
+ \cventry{2016-2017}{Manash Saha}{MS student}{\url{msaha@nevada.unr.edu}}{}{Topic: LTE-WiFi Coexistance}
+
+\subsection{Undergrad Students}
+\cventry{2016}{Dat Luu}{}{\url{dat_luu@nevada.unr.edu}}{}{Topic: Testbed Development for Spectrum Agility in Mesh Networks}
+
+\cventry{2016}{Edward Miles}{}{\url{elmiles93@live.com}}{}{Topic: Testbed development of Jamming Resistant Networks using GNURadio and USRPs}
+
+\subsection{Senior Capstone Project}
+\cventry{2016-2017}{Jamming Resilient UAV Mesh Networks}{}{}{}{
+\begin{itemize}
+\item[--] Henry Huffman (\url{hhuffman@nevada.unr.edu})
+\item[--] Jaime Moreno (\url{jaimemoreno@nevada.unr.edu})
+\item[--] Martin Luis Revilla (\url{mrevilla@nevada.unr.edu})
+\item[--] Brian Parawan(\url{bparawan@nevada.unr.edu})
+\end{itemize}
+}
+
+
+\section{International Professional Activities}
+\subsection{Session Chair at International Conferences}
+\cvitem{2015}{International Symposium on Cyberspace Safety and Security  (IEEE CSS) 2015, New York, USA. Track -  Active Defense Techniques and Systems}
+
+\subsection{Technical Program Committee}
+\cvitem{2015-2016}{International Conference on Information Technology (ICIT), 2015, 2016}
+\subsection{Selected Journal/Conference Reviewer}
+\cvitem{Journals}{Computer Communications (Elsevier), Physical Communication (Elsevier), Pervasive and Mobile Computing (Elsevier),  Future Generation Computer Systems (Elsevier),  International Journal of Communication Systems (Wiley), Wireless Communications and Mobile Computing (Wiley), International Journal of Distributed Sensor Networks (Hindawi)}
+
+\cvitem{Conferences}{IEEE Globecom, IEEE ICC, IEEE MILCOM, ISCIT, IEEE WoWMoM }
+
+
+%\newpage
+\section{Patent Invention Disclosure}
+\cvitem{[1]}{S. Bhunia, M. R. Khan, S. Sengupta, and M. Yuksel. \textit{In-Band Line-of-Sight Discovery for Directional Full-Duplex Transceivers}, U.S. Provisional Patent Application 62/338,953}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+% Publications from a BibTeX files using the multibib package
+\section{Peer Reviewed Publications}
+\bibliographystylebibj{unsrt}
+\bibliographybibj{journal}              % 'publications' is the name of a BibTeX file
+\nocitebibj{*}
+
+\bibliographystylebibp{unsrt}
+\bibliographybibp{progress}              % 'publications' is the name of a BibTeX file
+\nocitebibp{*}
+
+
+\bibliographystylebibc{unsrt}
+\bibliographybibc{conference}              % 'publications' is the name of a BibTeX file
+\nocitebibc{*}
+
+\section{Fellowships and Awards}
+\cvitem{2016}{Outstanding graduate student of Department of Computer Science, UNR}
+\cvitem{2016}{Outstanding Graduate Student by Graduate Student Association of UNR}
+\cvitem{2014-2016}{Student travel grants to attend MILCOM 2014, 2015 and 2016}
+\cvitem{2015-2016}{Student travel grants to attend IEEE CSS'15 and GRCon'16}
+\cvitem{2015}{Outstanding International Graduate Student award, Graduate Student Association,  UNR}
+\cvitem{2014-2016}{International Graduate Student Award, Office of International Students, UNR - two times}
+\cvitem{2011-2013}{Two year CUNY science fellowship}
+\cvitem{2010}{Paper entitled ''Study of OPNET and performance evaluation of WiMAX network under various terrain conditions in OPNET'' won the \emph{best student paper award} at the National Conference on Microwave and Communication NCMicroCom-2010}
+\cvitem{2008-2010}{Two year full scholarship for M.Tech programme for qualifying Graduate Aptitude Test in Engineering, GATE (All-India basis)}
+
+%\section{Travel Awards}
+
+
+\section{Leadership and Committee Experience}
+\cvitem{2014-2017}{Elected thrice as a college of engineering representative at UNR Graduate Student Association}
+\cvitem{2015-2017}{Elected twice as the chair of the  clubs and organizations committee of UNR GSA}
+\cvitem{2014-2017}{Serving budget committee of UNR GSA}
+\cvitem{2014-2017}{Serving judicial committee of UNR GSA}
+\cvitem{2014-2015}{Elected vice president of Computer Science Graduate Student Club, UNR}
+\cvitem{2013-2015}{Elected twice as the vice president of Indian Student Organization, UNR}
+
+
+
+\section{References}
+\cventry{Advisor}{Dr. Shamik Sengupta}{Assistant Professor}{Department of Computer Science and Engineering, University of Nevada, Reno}{Email:~ssengupta@unr.edu}{ \url{http://www.cse.unr.edu/~shamik/}}
+
+\cventry{Committee Member}{Dr. Mehmet H. Gunes}{Associate Professor}{Department of Computer Science and Engineering, University of  Nevada, Reno }{Email:~mgunes@unr.edu}{\url{http://www.cse.unr.edu/~mgunes}}
+
+
+\cventry{Department Chair}{Dr. George Bebis}{Professor and Chair }{Dept of Computer Science \& Engineering, University of Nevada}{Email:~bebis@cse.unr.edu}{\url{http://www.cse.unr.edu/~bebis/}}
+
+\cventry{Dean}{Dr. David Zeh}{Dean of the Graduate School}{University of Nevada, Reno}{Email:~zehd@unr.edu}{\url{http://www.unr.edu/biology/people/david-zeh}}
+
+
+
+\cventry{Collaborator}{Dr. Murat Yuksel}{Associate Professor}{Department of ECE, University of Central Florida (UCF)}{Email:~murat.yuksel@ucf.edu}{\url{http://www.ece.ucf.edu/~yuksem/}}
+
+
+\cventry{Collaborator}{Dr. Felisa Vazquez-Abad}{Professor}{Department of Computer Science, Hunter College, City University of New York (CUNY)}{Email:~felisav@hunter.cuny.edu}{}
+
+
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
