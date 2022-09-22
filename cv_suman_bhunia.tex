@@ -47,11 +47,32 @@
 
 % bibliography with mutiple entries
 \usepackage{multibib}
-\newcites{bibj,bibp,bibc}{{Journals},{In\ Progress},{Conference\ Proceedings}}
+\newcites{bibj,bibp,bibc,bibs}{{Journals},{Short\ Papers\ and\ Posters},{Conference\ Proceedings},{Short\ Papers\ and\ Posters}}
 \usepackage{enumerate}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
+
+
+
+%\newcommand{\makeauthorbold}[1]{%
+%	\DeclareNameFormat{author}{%
+%		\ifthenelse{\value{listcount}=1}
+%		{%
+%			{\expandafter\ifstrequal\expandafter{\namepartfamily}{#1}{\mkbibbold{\namepartfamily\addcomma\addspace \namepartgiveni}}{\namepartfamily\addcomma\addspace \namepartgiveni}}
+%			%
+%		}{\ifnumless{\value{listcount}}{\value{liststop}}
+%			{\expandafter\ifstrequal\expandafter{\namepartfamily}{#1}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}
+%			{\expandafter\ifstrequal\expandafter{\namepartfamily}{#1}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}%
+%		}
+%		\ifthenelse{\value{listcount}<\value{liststop}}
+%		{\addcomma\space}{}
+%	}
+%}
+%\makeauthorbold{Bhunia}
+
+
+
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
@@ -71,8 +92,10 @@
 \cventry{2018–2020}{Postdoctoral Researcher}{Dept. of Computer Science and Engineering}{}{}{Texas A\&M University, College Station, USA}
 \cventry{2017–2018}{Postdoctoral Scholar}{Department of Computer Science}{}{} {University of California, Davis, USA}
 \cventry{2012–2013}{Research Assistant}{Department of Computer Science}{John Jay College of Criminal Justice}{}{City University of New York, New York, USA}
-\cventry{2011-2012}{Adjunct Lecturer}{Department of Computer Science}{}{}{City College of City University of New York, New York, USA}
-\cventry{2010–2011}{Senior Research Fellow}{Department of Electronics and Telecommunication Engineering}{}{}{ Jadavpur University, Kolkata, India}
+\cventry{2011-2012}{Adjunct Lecturer}{Department of Computer Science}{}{}{City College of City University of New York, New York, USA
+}
+\cventry{2010–2011}{Senior Research Fellow}{Department of Electronics and Telecommunication Engineering}{}{}{ Jadavpur University, Kolkata, India
+}
 
 
 
@@ -85,15 +108,23 @@
 
 
 \section{Awards and Fellowships}
-\cvitem{2018}	{Outstanding Thesis award from the Department of Computer Science, UNR}
-\cvitem{2017}	{Outstanding Graduating Graduate Student, UNR (Awarded only one student in the University)}
-\cvitem{2016}	{Outstanding graduate student of Department of Computer Science, UNR}
-\cvitem{2016}	{Outstanding Graduate Student by Graduate Student Association of UNR}
-\cvitem{2015}	{Outstanding International Graduate Student award, Graduate Student Association, UNR}
-\cvitem{2014-2016}	{International Graduate Student Award, Office of International Students, UNR - two times}
-\cvitem{2011-2013}	{Two year City University of New york science fellowship}
+\cvitem{2018}	{Outstanding Thesis award from the Department of Computer Science, UNR
+}
+\cvitem{2017}	{Outstanding Graduating Graduate Student, UNR (Awarded only one student in the University)
+}
+\cvitem{2016}	{Outstanding graduate student of Department of Computer Science, UNR
+}
+\cvitem{2016}	{Outstanding Graduate Student by Graduate Student Association of UNR
+}
+\cvitem{2015}	{Outstanding International Graduate Student award, Graduate Student Association, UNR
+}
+\cvitem{2014-2016}	{International Graduate Student Award, Office of International Students, UNR - two times
+}
+\cvitem{2011-2013}	{Two year City University of New york science fellowship
+}
 \cvitem{2010}	{Paper entitled ”Study of OPNET and performance evaluation of WiMAX network under various terrain conditions in OPNET” won the best student paper award at the National
-Conference on Microwave and Communication NCMicroCom-2010}
+Conference on Microwave and Communication NCMicroCom-2010
+}
 
 
 \section{Research Interest}
@@ -254,18 +285,25 @@ CS 102 Introduction to Programming (at City College of New York)
 
 % Publications from a BibTeX files using the multibib package
 \section{Peer Reviewed Publications}
-\bibliographystylebibj{unsrt}
+\bibliographystylebibj{IEEEtran}
 \bibliographybibj{journal}              % 'publications' is the name of a BibTeX file
 \nocitebibj{*}
 
-\bibliographystylebibp{unsrt}
-\bibliographybibp{progress}              % 'publications' is the name of a BibTeX file
-\nocitebibp{*}
+%\bibliographystylebibs{IEEEtran}
+%\bibliographybibs{conference}              % 'publications' is the name of a BibTeX file
+%\nocitebibs{*}
+%
 
 
-\bibliographystylebibc{unsrt}
+
+\bibliographystylebibc{IEEEtran}
 \bibliographybibc{conference}              % 'publications' is the name of a BibTeX file
 \nocitebibc{*}
+
+\bibliographystylebibp{IEEEtran}
+\bibliographybibp{shortPapers}              % 'publications' is the name of a BibTeX file
+\nocitebibp{*}
+
 
 \section{Fellowships and Awards}
 \cvitem{2016}{Outstanding graduate student of Department of Computer Science, UNR}
