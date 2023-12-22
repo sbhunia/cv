@@ -47,7 +47,7 @@
 
 % bibliography with mutiple entries
 \usepackage[resetlabels]{multibib}
-\newcites{bibj,bibp,bibc,bibs}{{Journals},{Short\ Papers\ and\ Posters},{Conference\ Proceedings},{Short\ Papers\ and\ Posters}}
+\newcites{bibj,bibp,bibc,bibs,bibt}{{Journals},{Short\ Papers\ and\ Posters},{Conference\ Proceedings},{Short\ Papers\ and\ Posters}, {Thesis Supervisor}}
 \usepackage{enumerate}
 %----------------------------------------------------------------------------------
 %            content
@@ -185,138 +185,37 @@ Conference on Microwave and Communication NCMicroCom-2010}
 \bibliographybibp{shortPapers}              % 'publications' is the name of a BibTeX file
 
 
+
+
+
+
 \section{Research Grant Proposal Preparation}
-\cvitem{TAMU}{	Prepared a part of the proposal, “Deploying Defenses for Cellular Networks Using the AWARE
-Testbed”, submitted to DHS in 2019}
-\cvitem{TAMU}{Prepared a part of the proposal, “DAAR: Drone-Augmented Augmented Reality for CyberHuman Physical Systems”, submitted to NSF CPS in 2019}
-\cvitem{UC Davis}{	Prepared a part of the proposal, “Building Low-Power Wide Area Networking Systems for Smart City IoT Applications”, submitted to NSF ICE-T in 2018
-}
-%\cvitem{UNR}{ Helped my advisor writing in a proposal, “Efficient Spectrum Access Utilizing Unmanned Autonomous Systems”, submitted to NSF EARS in 2014
-%}
+\cvitem{NIDILRR}{“OmniAcc: Personalized Accessibility Assistant using Large Language Models,” submitted to the National Institute on Disability, Independent Living, and Rehabilitation Research (NIDILRR) on 11-Dec-2023. My role: Co-PI. Requested \$603,046.00 over a 3-year period.}
+
+\cvitem{NSF-CISE}{“Collaborative Research: NeTS: Small: Harnessing Machine Learning for Resilient Cyberphysical Systems” submitted to NSF - Direct For Computer \& Info Scie \& Enginr (CSE) - Division Of Computer and Network Systems (CNS) – NeTS. My Role – Lead PI. Requested \$570,244 over a three-year period.}
+
+\cvitem{NSF-CISE}{“Collaborative Research: NeTS: Small: Secure Neighbor Discovery and Link Maintainance in Optical Wireless UAV Networks” submitted to to NSF – CNS – NeTS. My Role: Lead PI.}
 
 
-
-
-
-
-
-
-
-%
-%\section{Research Projects}
-%\cventry{2018-2020}{Secured Edge Computing for Disaster Response Network}{Postdoctoral research}{}{}
-%{
-%	\begin{itemize}
-%		\item[--]Design EdgeKeeper- A distributed coordination scheme for Edge Network to facilitate Security, Naming and Service discovery in Opportunistic network.
-%		\item[--] Implementing EdgeKeeper using Java and Android that utilizes Zookeeper, GNS, etc.
-%	\end{itemize}
-%}
-%
-%\cventry{2017--2018}{Security in cyber-physical system}{ Postdoctoral research}{}{}{
-%	\begin{itemize}
-%		\item[--] Designed BF-IoT - a Wireless fingerprint-based authentication mechanism in IoT.
-%		\item[--] Securing privacy leakage in Bluetooth based IoT network.
-%		\item[--] Design authentication mechanisms in Voice based personal assistant such as Alexa.
-%	\end{itemize}
-%}
-%
-%\cventry{2013-2017}{Jamming Avoidance in Dynamic Spectrum Access Networks}{PhD Dissertation}{}{}
-%  {
-%  \begin{itemize}
-%    \item[--] Explored honeynet-based defense mechanism for cognitive radio networks under jamming attack.
-%    \item[--] Designed stochastic learning mechanism to perceive attacker's strategy by wireless fingerprint. 
-%    \item[--] Formulated queue model with fixed vacation to analyze traffic behavior of cognitive radios.
-%  \end{itemize}
-%  The effectiveness of the proposed mechanism has been evaluated on a state-of-the-art high spectrum agile radio testbed comprising several USRP software defined radios which are controlled using open source GNURadio.
-%  }
-%
-%\cventry{2015-present}{Neighbor Discovery in Directional Communication}{Lead Student}{}{}
-%  {
-%  \begin{itemize}
-%    \item[--] Proposed line-of-sight (LOS) discovery methods for mobile nodes with full directional transceivers. Works both for directional RF and free-space-optics (FSO) networks.
-%    \item[--] Modified helix equations to optimize neighbor discovery scanning in 3D. 
-%  \end{itemize}
-%  This work has been evaluated with a prototype built with an off-the-shelf robot car, IR transceivers and Raspberry Pi as the controller. In addition, one patent application has been filed in collaboration with M Khan and Dr. M Yuksel.
-%  }
-%
-%
-%
-%\cventry{2015-2016}{Jamming Avoidance Multihop 3D UAS Mesh Networks}{Lead Student}{}{}
-%  {
-%  \begin{itemize}
-%    \item[--] Examined the performance of adaptive beam nulling as a mitigation technique against jamming attacks in multihop ad hoc networks. 
-%    \item[--] Proposed Kalman filter based tracking model to predict movement of the jammer with discrete DoA estimation; and optimized the beam null region based on stochastic model.
-%    \item[--] Built 3D mobility model for UAVs in ns3.
-%  \end{itemize}
-%  }
-%
-%
-%\cventry{2010-2011}{Enhance Performance of Voice Service for Congested Networks}{Research Fellow}{}{}
-%  {
-%  \begin{itemize}
-%    \item[--] Proposed optimization mechanism for SIP based VoIP service over wireless networks.
-%    \item[--] Proposed effective adaptive jitter playout buffer algorithm for real-time application.
-%    \item[--] Built MAC layer for cognitive radio in OPNET using Proto-C.
-%    \item[--] Designed cross Layer optimization model of VoIP end-to-end QoS over cognitive radio.
-%  \end{itemize}
-%  }
-%
-%
-%\cventry{2009-2010}{Real Time Traffic over WiMAX}{Masters Dissertation}{}{}
-%  {
-%  \begin{itemize}
-%    \item[--] Evaluated performance of WiMAX under mobility, pathloss models, traffic type and scheduling.
-%    \item[--] Investigated VoIP service in WiMAX, WiFi and integrated WiMAX-WiFi networks.
-%    \item[--] Reduced hand-off delay for WiMAX network  by integrating  MAC and mobile-IP.
-%  \end{itemize}
-%  }
-%
-%
-%\section{Testbed Development and Demonstration}
-%\cventry{2015-present}{Dynamic Spectrum Access Testbed with GNURadio}{}{}{}
-%  {
-%  \begin{itemize}
-%    \item[--] Implemented frequency agile cognitive radio testbed using USRP, GNU Radio.
-%    \item[--] Inspected performance for channel aggregation, fragmentation, jamming attacks etc.
-%    \item[--] Implemented full duplex transmission using single radio device.
-%    \item[--] Implemented dynamic spectrum selection in multi hop mesh networks.
-%  \end{itemize}
-%  }
-%
-%\cventry{2013-2014}{Mobile Frequency agile Testbed}{}{}{}
-%  {
-%  \begin{itemize}
-%    \item[--] Built on top of Atheros chips and ath5k as the WiFi driver.
-%    \item[--] Investigated pseudo random channel hopping to mitigate jamming.
-%  \end{itemize}
-%  }
-
+\cvitem{NSF-CPS}{``INDIoT: Integrated Named Data Internet of Things for Smart Homes,''  submitted to NSF – CPS. My Role: Lead PI. Requested \$499,951 over a three-year period.}
 
 
 
 
 \section{Student Advisement}
-\subsection{Masters Thesis Supervisor}
 
-\cventry{2023- 2024} {Pratiksha Shrestha}{M.S. in Computer Science}{ Miami University}{}{ Topic: Privacy preserving peer-review reward system using Blockchain and Zero Knoledge Proof.}
+\nocitebibt{*}
+\bibliographystylebibt{unsrt}
+\bibliographybibt{thesis}  
 
-\cventry{2022- 2024} {Owen Campbell}{M.S. in Computer Science}{ Miami University}{}{ Topic: Blockchain based auction system for resource hiring in Medical field.}
-
-\cventry{2022--2023}{Jesica Vasquez}{M.S. in Computer Science}{ Miami University}{}{Topic: Secure Neighbor Discovery Protocol for Free Space Optical Communication Netowrk}
-
-\cventry{2022--2023}{Nick Perry}{M.S. in Computer Science}{ Miami University}{}{Thesis: Neural Network-Based Crossfire Attack Detection in SDN-Enabled Cellular Networks}
-
-\cventry{2021--2023}{Monu Chaudhary}{M.S. in Computer Science}{ Miami University}{}{Thesis: Fairness in NIL-based NFT Marketplace}
-
-\cventry{2020--2022}{Angela Famera}{M.S. in Computer Science}{Miami University}{}{ Thesis: Cross-Device Federated Intrusion Detector for Early Stage Botnet Propagation}
 
 
 
 \subsection{Thesis Reading and Committee Membership}
 
-\cventry{2023}{Jacob James Krzciok}{M.S. in Computer Science}{ MU}{Advisor: Dr. K. Bibak}{Topic: Social Cybersecurity for IoT and Related Generalizations}
+\cventry{2023}{Jacob James Krzciok}{M.S. in Computer Science}{ MU}{Advisor: Dr. K. Bibak}{Topic: Some Improvements to Social Authentication and Bot Detection Schemes and Their Applications in IoT}
 
-\cventry{2023}{Nathan Callahan}{M.S. in Computer Science}{ MU}{Advisor: Dr. J. Femiani}{Topic: Improving Automatic Modulation Detection Across a Range of Signal to Noise Levels}
+\cventry{2023}{Nathan Callahan}{M.S. in Computer Science}{ MU}{Advisor: Dr. J. Femiani}{Topic: Curriculum Based Learning For Automatic Modulation Classification}
 
 \cventry{2022}{Kareem Ghumrawi	}{M.S. in Computer Science}{ MU}{Advisor: Dr. P. J. Giabbanelli}{Thesis: Applying and Accelerating Large-Scale Population Simulations}
 
@@ -344,6 +243,7 @@ Testbed”, submitted to DHS in 2019}
 
 \subsection{Senior Capstone projects}
 \cvitem{2023--2024}{Catch the Flag Competition Platform Building}
+\cvitem{2023--2024}{Hide and Seek Game for Attack/Defense Analysis}
 \cvitem{2022--2023}{Close bid Auction using Blockchain for Ambulance Hiring}
 \cvitem{2022--2023}{Peer to Peer Review System using Blockchain}
 \cvitem{2021--2022}{Blockchain based First Responder Application}
@@ -354,6 +254,10 @@ Testbed”, submitted to DHS in 2019}
 
 
 \section{Academic and Professional Services}
+
+\subsection{Editorial Boards}
+\cvitem{2022-2024}{Associate Editor on the IET Wireless Sensor Systems Editorial Board (Impact Factor of 1.9)}
+
 \subsection{Session Chair at International Conferences}
 \cvitem{2022}{19th IEEEAnnual Consumer Communications \& Networking Conference (CCNC 2022), Las Vegas, USA, session: “WiP5: Autonomous vehicles”}
 \cvitem{2015}{International Symposium on Cyberspace Safety and Security  (IEEE CSS) 2015, New York, USA. Track -  Active Defense Techniques and Systems}
@@ -380,8 +284,6 @@ Testbed”, submitted to DHS in 2019}
 \cvitem{2021--present}{Member of Cybersecurity Committee at the department of CSE.}
 \cvitem{2014-2017}{Elected thrice as a college of engineering representative at UNR Graduate Student Association.}
 \cvitem{2015-2017}{Elected twice as the chair of the  clubs and organizations committee of UNR GSA}
-\cvitem{2014-2017}{Serving budget committee of UNR GSA}
-\cvitem{2014-2017}{Serving judicial committee of UNR GSA}
 \cvitem{2014-2015}{Founding vice president of Computer Science Graduate Student Club, UNR}
 \cvitem{2013-2015}{Elected twice as the vice president of Indian Student Organization, UNR}
 
