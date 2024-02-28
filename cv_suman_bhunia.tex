@@ -47,7 +47,7 @@
 
 % bibliography with mutiple entries
 \usepackage[resetlabels]{multibib}
-\newcites{bibj,bibp,bibc,bibs,bibt}{{Journals},{Short\ Papers\ and\ Posters},{Conference\ Proceedings},{Short\ Papers\ and\ Posters}, {Thesis Supervisor}}
+\newcites{bibj,bibp,bibc,bibw,bibt}{{Journals},{Short\ Papers\ and\ Posters},{Conference\ Proceedings},{Workshop\ Proceedings}, {Thesis Supervisor}}
 \usepackage{enumerate}
 %----------------------------------------------------------------------------------
 %            content
@@ -184,6 +184,9 @@ Conference on Microwave and Communication NCMicroCom-2010}
 \bibliographystylebibp{IEEEtran}
 \bibliographybibp{shortPapers}              % 'publications' is the name of a BibTeX file
 
+\nocitebibw{*}
+\bibliographystylebibw{IEEEtran}
+\bibliographybibw{workshop}              % 'publications' is the name of a BibTeX file
 
 
 
