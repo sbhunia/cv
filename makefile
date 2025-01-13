@@ -9,3 +9,5 @@ all:
 	pdflatex cv_suman_bhunia.tex 
 	pdflatex cv_suman_bhunia.tex 
 
+	rm -r -f *.aux *.bbl *.blg *.dvi *.fls *.log *.lof *.gz *.toc *.bak~ 
+
